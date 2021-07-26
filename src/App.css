@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+
+button{
+  padding: 5px;
+  background: linear-gradient(to right,#eef85d, #eabb38);
+}
+
+.inputBox > *{
+  margin : 10px;
+  padding : 6px;
+}
+
+.resultBox{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-top: 20px;
+    margin-left: 25%;
+}
+
+.result{
+  border: 1px solid grey;
+  text-align: initial;
+  padding: 0 0 0 20px;
+  margin-top: 20px;
+  background-color: #eaf2f8;
+}
+
+.subHeading{
+  margin-top: -10px;
+    font-size: smaller;
+    color: darkolivegreen;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .loading {
+    border: 16px solid #f3f3f3;
+    border-top: 0px solid #f3f3f3;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 47%;
+    margin-top: 40px;
+    animation: spin infinite 2s linear;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
